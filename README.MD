@@ -1,0 +1,1 @@
+# Notes from Pycon Fr 2023
