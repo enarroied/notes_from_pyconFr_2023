@@ -95,7 +95,31 @@
 <li><p>Change the makefile</p></li>
 </ol>
 <p>in the BUILDDIR line, I changed the relative path to make it the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory, at the same level of the doc folder containing the Sphinx project:</p>
-<div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="nv">BUILDDIR</span><span class="w">      </span><span class="o">=</span><span class="w"> </span>../docs
+<div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="c"># Minimal makefile for Sphinx documentation</span>
+<span class="c">#</span>
+
+<span class="c"># You can set these variables from the command line.</span>
+<span class="nv">SPHINXOPTS</span><span class="w">    </span><span class="o">=</span>
+<span class="nv">SPHINXBUILD</span><span class="w">   </span><span class="o">=</span><span class="w"> </span>sphinx-build
+<span class="nv">SOURCEDIR</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="nb">source</span>
+<span class="nv">BUILDDIR</span><span class="w">      </span><span class="o">=</span><span class="w"> </span>build
+<span class="nv">DOCDIR</span><span class="w">        </span><span class="o">=</span><span class="w"> </span>docs
+
+<span class="c"># Put it first so that &quot;make&quot; without argument is like &quot;make help&quot;.</span>
+<span class="nf">help</span><span class="o">:</span>
+<span class="w">	</span>@<span class="k">$(</span>SPHINXBUILD<span class="k">)</span><span class="w"> </span>-M<span class="w"> </span><span class="nb">help</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>SOURCEDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>BUILDDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">$(</span>SPHINXOPTS<span class="k">)</span><span class="w"> </span><span class="k">$(</span>O<span class="k">)</span>
+
+<span class="nf">.PHONY</span><span class="o">:</span><span class="w"> </span><span class="n">help</span> <span class="n">Makefile</span>
+
+<span class="c"># Catch-all target: route all unknown targets to Sphinx using the new</span>
+<span class="c"># &quot;make mode&quot; option.  $(O) is meant as a shortcut for $(SPHINXOPTS).</span>
+<span class="nf">%</span><span class="o">:</span><span class="w"> </span><span class="n">Makefile</span>
+<span class="w">	</span>@<span class="k">$(</span>SPHINXBUILD<span class="k">)</span><span class="w"> </span>-M<span class="w"> </span><span class="nv">$@</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>SOURCEDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>BUILDDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">$(</span>SPHINXOPTS<span class="k">)</span><span class="w"> </span><span class="k">$(</span>O<span class="k">)</span>
+
+<span class="c"># Custom target to build and copy to docs folder</span>
+<span class="nf">html</span><span class="o">:</span>
+<span class="w">	</span>@<span class="k">$(</span>SPHINXBUILD<span class="k">)</span><span class="w"> </span>-M<span class="w"> </span>html<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>SOURCEDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>BUILDDIR<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">$(</span>SPHINXOPTS<span class="k">)</span><span class="w"> </span><span class="k">$(</span>O<span class="k">)</span>
+<span class="w">	</span>xcopy<span class="w"> </span>/E<span class="w"> </span>/Y<span class="w"> </span>build<span class="se">\h</span>tml<span class="w"> </span>..<span class="se">\d</span>ocs
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
@@ -103,7 +127,7 @@
 </ol>
 <p>Add the following 2 lines to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_baseurl</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span>
-<span class="n">html_output_dir</span> <span class="o">=</span> <span class="s1">&#39;docs&#39;</span>
+<span class="n">html_output_dir</span> <span class="o">=</span> <span class="s1">&#39;../docs&#39;</span>
 </pre></div>
 </div>
 </section>

@@ -15,7 +15,7 @@ Welcome to Notes From Pycon Fr 2023's documentation!
    intro
    page using markdown and mist
    change the theme and other decorations
-   Change the settings to make the html folder
+   change the settings to make the html folder
 
 
 Indices and tables

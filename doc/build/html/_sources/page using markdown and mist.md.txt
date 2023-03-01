@@ -14,7 +14,7 @@ As it is explained in this other [documentation by read the docs](https://docs.r
 
 To use the functionality, you need to install: 
 
-``` 
+```
 pip install myst-parser
 ```
 

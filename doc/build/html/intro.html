@@ -4,11 +4,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page using markdown &mdash; Notes From Pycon Fr 2023 2023 documentation</title>
+  <title>My first Sphinx page! &mdash; Notes From Pycon Fr 2023 2023 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/pycon.jpg"/>
-    <link rel="canonical" href="./page using markdown and mist.html" />
+    <link rel="canonical" href="./intro.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -22,8 +22,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Let’s make our site a bit more pretty" href="change%20the%20theme%20and%20other%20decorations.html" />
-    <link rel="prev" title="My first Sphinx page!" href="intro.html" /> 
+    <link rel="next" title="Page using markdown" href="page%20using%20markdown%20and%20mist.html" />
+    <link rel="prev" title="Welcome to Notes From Pycon Fr 2023’s documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,14 +47,14 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro.html">My first Sphinx page!</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Page using markdown</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#the-concept">The concept</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reference">Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">My first Sphinx page!</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#context">Context</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ressources">Ressources</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="page%20using%20markdown%20and%20mist.html">Page using markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="change%20the%20theme%20and%20other%20decorations.html">Let’s make our site a bit more pretty</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Change%20the%20settings%20to%20make%20the%20html%20folder.html">Change the settings to make the html folder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change%20the%20settings%20to%20make%20the%20html%20folder.html">Change the settings to make the html folder</a></li>
 </ul>
 
         </div>
@@ -71,9 +71,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Page using markdown</li>
+      <li class="breadcrumb-item active">My first Sphinx page!</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/page using markdown and mist.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -81,20 +81,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="page-using-markdown">
-<h1>Page using markdown<a class="headerlink" href="#page-using-markdown" title="Permalink to this heading"></a></h1>
-<section id="the-concept">
-<h2>The concept<a class="headerlink" href="#the-concept" title="Permalink to this heading"></a></h2>
-<p>By default, Sphinx uses reStructuredText, the files used end with .rst.</p>
-<p>For example, for this test project, “My first Sphinx page!” has its own file.rst file. And “Page using markdown” - this page- has a markdown file to generate it.</p>
-<p>And since markdown is very well-known, it feels more natural than to use reStructuredText.</p>
+  <section id="my-first-sphinx-page">
+<span id="introduction"></span><h1>My first Sphinx page!<a class="headerlink" href="#my-first-sphinx-page" title="Permalink to this heading"></a></h1>
+<section id="context">
+<h2>Context<a class="headerlink" href="#context" title="Permalink to this heading"></a></h2>
+<p>This is a page creeated for my notes following the Pycon Fr 2023!</p>
+<p>I had never used Sphinx before, but I sure have seen many documentation
+pages done with it. Big thanks to Edith Viau, whose conference about
+documentation mentioned Sphinx.</p>
 </section>
-<section id="reference">
-<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this heading"></a></h2>
-<p>As it is explained in this other <a class="reference external" href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">documentation by read the docs</a>, you can also use markdown pages (.md), wich I am more familiar with.</p>
-<p>To use the functionality, you need to install:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">myst</span><span class="o">-</span><span class="n">parser</span>
-</pre></div>
+<section id="ressources">
+<h2>Ressources<a class="headerlink" href="#ressources" title="Permalink to this heading"></a></h2>
+<p>But guess what, her conference, which was so great by the way, was not
+about how to use sphinx. And since I wanted to try it out, I followed
+the following 2 ressources :
+1. The official SPhinx documentation
+2. This tutorial by <strong>Audrey Tavares</strong>: <a class="reference external" href="https://www.youtube.com/playlist?list=PLE72UCmIe7T9HewaqCUhKqiMK3LxYStjy">https://www.youtube.com/playlist?list=PLE72UCmIe7T9HewaqCUhKqiMK3LxYStjy</a></p>
+<p>The tutorail is so great! Big thanks to Audrey Tavares!</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/pycon.jpg"><img alt="Pycon Fr 2023 logo" src="_images/pycon.jpg" style="width: 280.0px; height: 134.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Notes taken following Pycon Fr 2023</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition-be-careful admonition">
+<p class="admonition-title">Be careful!</p>
+<p>This is by no means a tutorial, just a personal exploration on the topic of how to create Sphinx pages.</p>
 </div>
 </section>
 </section>
@@ -103,8 +115,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="intro.html" class="btn btn-neutral float-left" title="My first Sphinx page!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="change%20the%20theme%20and%20other%20decorations.html" class="btn btn-neutral float-right" title="Let’s make our site a bit more pretty" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Notes From Pycon Fr 2023’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="page%20using%20markdown%20and%20mist.html" class="btn btn-neutral float-right" title="Page using markdown" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
