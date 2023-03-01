@@ -1,0 +1,29 @@
+# Ignore ipynb checkpoint files
+*.ipynb_checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Ignore Python virtual environment files
+venv/
+env/
+*.venv
+*.env
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore the notebooks' output files
+*.nbconvert.ipynb
+*.ipynb_output/
+
+# Ignore the Jupyter kernel connection file
+*.json
+
+# Ignore any local configuration files
+*config.json
+
+#Ignore makefiles
+*/.Makefile
+*/.make.bat
