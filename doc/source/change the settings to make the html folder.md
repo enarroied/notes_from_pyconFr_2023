@@ -2,7 +2,7 @@
 
 ## Why to change the settings
 
-I have the documents used to create the documentation in a folder called "doc". When I create the html files with the ```make html``` command, the html files are inserted in doc/build.html.
+I have the documents used to create the documentation in a folder called "docs". When I create the html files with the ```make html``` command, the html files are inserted in doc/build.html.
 
 But when I uplpoad the documentation to github, if I want github pages to display my page, I need to have it in a folder called "doc" in the root of the project. So it would be very convenient if that was the default setting, instead of having to drag and drop (+ there is the risk of forgetting to do it).
 
