@@ -1,0 +1,15 @@
+# Change the settings to make the html folder
+
+## Why to change the settings
+
+I have the documents used to create dthe documentation in a folder called "doc". When i create the html files with the ```make html``` command, the html files are inserted in doc/build.html.
+
+But when I uplpoad the documentation to github, if I want github pages to display our page, we need to have it in a folder called "doc" in the root of the project. So it would be very convinient if that was the default setting, instead of having to drag and drop (+ there is the risk of forgetting to do it).
+
+
+## How to change the settings
+
+So let's be honnest, chatGPT helped me with this one 😃.
+
+Here are the steps:
+

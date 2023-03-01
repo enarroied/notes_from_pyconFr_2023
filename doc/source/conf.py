@@ -6,6 +6,15 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import sys
+
+# Path setup
+sys.path.insert(0, os.path.abspath('.'))
+
+#html_dir = os.path.abspath('../docs')
+
+
 project = 'Notes From Pycon Fr 2023'
 copyright = '2023, Eric Narro'
 author = 'Eric Narro'
@@ -26,5 +35,10 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_theme' #'alabaster'
-html_static_path = ['_static']
+#html_static_path = ['_static']
+html_static_path = [os.path.join(os.path.abspath('.'), 'static')]
+
 html_favicon = '../../input/pycon.jpg'
+
+html_baseurl = '.'
+html_output_dir = 'docs'
