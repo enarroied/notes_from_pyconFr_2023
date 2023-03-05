@@ -15,7 +15,7 @@ To install the linter, you just need to:
 pip install flake8 flake8-test-docs
 ```
 
-Be aware that this will extend your flake8 configuration, you do not want this installed if you use flake8 to test anything else (or you are OK with having "TDO" errors raise every time you use flake8, but that is a terrible idea). Maybe you can install it in a special environment for testing, or something like that.
+Be aware that this will extend your flake8 configuration, you do not want this installed if you use flake8 to test anything else (or you are OK with having "TDO" errors raise every time you use flake8, but that is a terrible idea). Maybe you can install it in a special environment for testing, or something like that. During the conference, David said that this linter only is used when functions are defined in a certain manner, such as ```test_function_name```.
 
 To launch it, you just have to launch flake8 once flake8-test-docs is installed, for example, from the folder where the python file is located:
 ```
