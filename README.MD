@@ -4,7 +4,11 @@
 
 This repo contains different pieces of code to illustrate the blog posts (there are 2) I wrote following the [Pycon Fr 2023](https://www.pycon.fr/2023/) 🐍.
 
+![pyconfr notes](./input/notes.png) *PyconFr Logo created by [Marie-Ange Vollard](https://www.marieange-vollard.com/)*
+
 ## Blog Post number 1
+
+[Check the blog post!](https://medium.com/p/52b1e44214c8)
 
 There are 6 conferences:
 
