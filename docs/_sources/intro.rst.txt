@@ -18,6 +18,7 @@ Ressources
 But guess what, her conference, which was so great by the way, was not 
 about how to use sphinx. And since I wanted to try it out, I followed 
 the following 2 ressources :
+
 1. The official SPhinx documentation
 2. This tutorial by **Audrey Tavares**: https://www.youtube.com/playlist?list=PLE72UCmIe7T9HewaqCUhKqiMK3LxYStjy
 

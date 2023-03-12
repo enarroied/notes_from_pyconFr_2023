@@ -24,7 +24,7 @@ st.header("Airports of France with Folium Maps on Streamlit")
 st.dataframe(df_airports_display.style.hide(axis="index"))
 
 
-m_draw: folium.Map = folium.Map(location=[44.8500, 0.4833], zoom_start=2)
+m_draw: folium.Map = folium.Map(location=[46.7111, 1.7191], zoom_start=5)
 for i, row in gdf_airports.iterrows():
     folium.Marker(location=[row["lat"], row["lon"]], tooltip=row["name"]).add_to(m_draw)
 
