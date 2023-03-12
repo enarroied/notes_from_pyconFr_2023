@@ -26,8 +26,8 @@ There are 6 conferences:
 There are 6 more conferences:
 
 7. **Supercharging Jupyter Notebooks for effective storytelling**
-    * Check the notebook
-    * [Check the Datapane demo app created](https://cloud.datapane.com/reports/vAqPl2k/my-example-app/)
+    * [Check the notebook](https://github.com/enarroied/notes_from_pyconFr_2023/blob/master/Datapane%20test/datapane_tests.ipynb)
+    * [Check the Datapane demo report created](https://cloud.datapane.com/reports/n3RG4X7/iris-dataset-test-reporthtml/)
 8. **We tested it for you... methodology and tools**
     * No code created, but you can check [Nicolas Ledez's github repo with some test results](https://github.com/nledez/terraform_updater/actions/runs/3962186287)
 9. **Conference 9: Treating Geographical data with Rasterio, Numpy, Fiona and Shapely**: [see the notebook](https://github.com/enarroied/notes_from_pyconFr_2023/blob/master/Treating%20Geographic%20data%20with%20rasterio%2C%20NumPy%2C%20Fiona%20and%20Shapely.ipynb)
