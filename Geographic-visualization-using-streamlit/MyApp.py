@@ -5,7 +5,7 @@ from shapely.geometry import Point
 import folium
 from streamlit_folium import st_folium
 
-df_airports = pd.read_csv('../input/airports.csv')
+df_airports = pd.read_csv('airports.csv')
 #Create the geodataframe for airports:
 gdf_airports = gpd.GeoDataFrame(
     df_airports, 
