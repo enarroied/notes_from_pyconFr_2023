@@ -2,5 +2,4 @@ folium
 geopandas
 pandas
 shapely
-streamlit
 streamlit_folium
